@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Bartłomiej Dziwisz">
+    <link rel="stylesheet" href="css/main.css">
+        <title>Survey form</title>
+
+</head>
+<body>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <header>
+        <h1 id="title">freeCodeCamp Survey Form</h1>
+        <p id="description">Thank you for taking the time to help us improve the platform</p>
+    </header>
+    <main>
+        <section>
+            <form action="submit-survey" id="survey-form" class="survey-form">
+                    <div class="form-group">
+                        <label for="name-input" id="name-label">Name</label>
+                        <input type="text" name="name-input" id="name" required placeholder="Enter your Name"></label>
+                    </div>
+                    <div class="form-group">
+                        <label for="email-input" id=email-label>Email</label>
+                        <input type="email" name="email-input" id="email" required placeholder="Enter your email">
+                    </div>
+                    <div class="form-group">
+                        <label for="age-input" id="number-label">Age (optional)</label>
+                        <input type="number" name="age-input" id="number" min=10 max=99 placeholder="Enter your age">
+                    </div>
+                    <div class="form-group">
+                        <label for="role-input">Which option best describes your current role?</label>
+                        <select name="role-input" id="dropdown" required>
+                            <option value="none" selected disabled>Select current role</option>
+                            <option value="student">Student</option>
+                            <option value="full-time-job">Full Time Job</option>
+                            <option value="full-time-lerner">Full Time Learner</option>
+                            <option value="not-say">Prefer not to say</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="recomended-choice">Would you recommend freeCodeCamp to a friend?</label>
+                        <ul>
+                            <li><input type="radio" name="recomended-choice" id="recomended-choice1" checked value="choice1"><label for="recomended-choice1">Definitely</label></li>
+                            <li><input type="radio" name="recomended-choice" id="recomended-choice2" value="choice2"><label for="recomended-choice2">Maybe</label></li>
+                            <li><input type="radio" name="recomended-choice" id="recomended-choice3" value="choice3"><label for="recomended-choice3">Not sure</label></li>
+                        </ul>       
+                    </div>
+                    <div class="form-group">
+                        <label for="favorite-feature">What is your favorite feature of freeCodeCamp </label>
+                            <select name="favorite-feature" id="favorite-feature">
+                                <option value="none" selected disabled>Select an option</option>
+                                <option value="Challenges">Challenges</option>
+                                <option value="Projects">Projects</option>
+                                <option value="Comunnity">Comunnity</option>
+                                <option value="Open-Source">Open Source</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="to-improve">What would you like to see improved? (Check all that apply)</label>
+                        <ul>
+                            <li><input type="checkbox" name="to-improve" id="to-improve1" value="to-improve1"><label for="to-improve1">Front-end projects</label></li>
+                            <li><input type="checkbox" name="to-improve" id="to-improve2" value="to-improve2"<label for="to-improve2">Back-end projects</label></li>
+                            <li><input type="checkbox" name="to-improve" id="to-improve3" value="to-improve3"><label for="to-improve3">Datai Visualization</label></li>
+                            <li><input type="checkbox" name="to-improve" id="to-improve4" value="to-improve4"><label for="to-improve4">Challenges</label></li>
+                            <li><input type="checkbox" name="to-improve" id="to-improve5" value="to-improve5"><label for="to-improve5">Open Source Community</label></li>
+                            <li><input type="checkbox" name="to-improve" id="to-improve6" value="to-improve6"><label for="to-improve6">Gitter help rooms</label></li>
+                            <li><input type="checkbox" name="to-improve" id="to-improve7" value="to-improve7"><label for="to-improve7">Videos</label></li>
+                            <li><input type="checkbox" name="to-improve" id="to-improve8" value="to-improve8"><label for="to-improve8">City Meetups</label></li>
+                            <li><input type="checkbox" name="to-improve" id="to-improve9" value="to-improve9"><label for="to-improve9">Wiki</label></li>
+                            <li><input type="checkbox" name="to-improve" id="to-improve10" value="to-improve10"><label for="to-improve10">Forum</label></li>
+                            <li><input type="checkbox" name="to-improve" id="to-improve11" value="to-improve11"><label for="to-improve11">Additional Courses</label></li>
+                        </ul>
+                    </div>
+                    <div class="form-group">
+                        <label for="suggestions">Any comments or suggestions?</label>
+                        <textarea name="suggestions" id="suggestions" rows="4" cols="30" placeholder="Enter your comment here..."></textarea>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" value="Submit" id="submit">
+                    </div>
+            </form>
+        </section>
+
+    </main>
+</body>
+</html>

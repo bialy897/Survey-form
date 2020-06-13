@@ -1,0 +1,71 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(rgba(71, 7, 114, 0.3), rgba(123, 64, 190, 0.3)), url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+
+}
+
+header {
+    text-align: center;
+}
+
+main {
+    background-color: rgba(22, 4, 43, 0.8);
+    width: 650px;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 1%;
+    padding: 1em 1em 1em 1em;
+
+}
+
+.form-group {
+    margin-bottom: 1em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form-group > * {
+    display: block;
+    border-radius: 2%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+    font-size: 1.25em;
+    padding:  1% 1% 1% 1%;
+}
+
+.form-group label {
+    margin-bottom: .3em;
+}
+.form-group li {
+    list-style: none;
+    margin-bottom: .25em;
+}
+
+.form-group li:hover {
+    color: mediumturquoise;
+}
+
+.form-group ul {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.form-group input[type="submit"] {
+    background: olivedrab;
+    border: none;
+}
+
+@media (max-width: 800px) {
+    main {
+        width: 500px;
+    }
+}
